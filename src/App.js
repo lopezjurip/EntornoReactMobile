@@ -12,7 +12,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch('http://localhost:3000/comments')
+    fetch('http://railsapi.lopezjuri.com/comments')
       .then(result => result.json())
       .then(comments => this.setState({ comments }));
   }
